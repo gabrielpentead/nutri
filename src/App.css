@@ -1,0 +1,115 @@
+/* Navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 150px; /* Aumenta o padding lateral */
+}
+
+.navbar-nav strong {
+    font-size: 24px; 
+}
+
+/* Container principal */
+.container {
+    padding: 60px 120px; /* Aumenta o padding lateral para mais espaço */
+}
+
+/* Produto container principal */
+.produto-container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1700px; /* Aumenta a largura máxima do container principal */
+    margin: 0 auto; /* Centraliza o container principal horizontalmente */
+}
+
+@media (max-width: 600px) {
+    .produto-container-principal {
+        padding: 60px 20px; /* Ajusta o padding lateral em telas menores */
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+/* Produto principal */
+.produto-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 750px; /* Aumenta a largura máxima do produto principal */
+    text-align: left; 
+}
+
+.produto-principal img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.produto-principal img:hover {
+    border-radius: 50px;
+}
+
+.produto-principal strong {
+    font-size: 30px; /* Aumenta o tamanho do título dos posts */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.produto-principal p {
+    font-size: 16px; 
+    margin-bottom: 10px;
+    line-height: 1.4; 
+}
+
+.produto-principal span {
+    font-weight: 700;
+    font-size: 25px; /* Ajuste o tamanho do texto no span, se necessário */
+}
+
+/* Botão */
+button {
+    background-color: #12AF50;
+    color: white;
+    padding: 17px 70px; /* Aumenta o padding lateral e vertical */
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 17px; /* Aumenta o tamanho da fonte */
+    width: auto;
+    opacity: 0.9;
+    border-radius: 0.3em;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    .produto-principal {
+        max-width: 100%; 
+    }
+
+    .produto-principal strong {
+        font-size: 22px; /* Ajuste o tamanho do título em telas menores */
+    }
+
+    .produto-principal p {
+        font-size: 20px; 
+    }
+
+    button {
+        font-size: 12px; 
+        padding: 6px 10px;
+    }
+}
